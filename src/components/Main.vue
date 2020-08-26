@@ -1,5 +1,18 @@
 <template>
     <main>
+        <h1>Features</h1>
+        <p>Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
 
+        <Slider />
     </main>
 </template>
+
+<script>
+import Slider from '@/components/Slider';
+export default {
+    name: 'app',
+    components: {
+        Slider
+    }
+}
+</script>
