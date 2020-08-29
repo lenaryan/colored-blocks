@@ -203,7 +203,7 @@ h1 {
 
     &__wrapper {
         display: flex;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -216,6 +216,7 @@ h1 {
     position: relative;
     margin-left: 150px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 
     &__num {
         position: absolute;

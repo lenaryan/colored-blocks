@@ -1,10 +1,8 @@
 <template>
     <section class="slider">
         <ul class="slider__wrapper">
-            <Slide />
-            <Slide />
-            <Slide />
-            <Slide />
+            <Slide v-for="feature in features"
+            :feature="feature" :key="feature.id" />
         </ul>
     </section>
 </template>
@@ -13,6 +11,7 @@
 import Slide from '@/components/Slide';
 export default {
     name: 'app',
+    props: ['features'],
     components: {
         Slide
     }
