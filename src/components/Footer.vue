@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="wrapper footer__wrapper">
-            <a href="/">
+            <a href="/" class="footer__logo">
                 <picture>
                     <source srcset="@/images/logo-bottom.svg">
                     <img src="@/images/logo-bottom.png" alt="Logo">
