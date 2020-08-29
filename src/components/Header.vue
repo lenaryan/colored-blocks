@@ -1,6 +1,11 @@
 <template>
     <header>
-        <a href="/"><img src="" alt="Logo"></a>
+        <a href="/">
+            <picture>
+                <source srcset="@/images/logo-top.svg">
+                <img src="@/images/logo-top.png" alt="Logo">
+            </picture>
+        </a>
         <TopMenu />
         <SignUp />
     </header>

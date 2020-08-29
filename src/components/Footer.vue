@@ -1,6 +1,11 @@
 <template>
     <footer>
-        <a href="/"><img src="" alt="Logo"></a>
+        <a href="/">
+            <picture>
+                <source srcset="@/images/logo-bottom.svg">
+                <img src="@/images/logo-bottom.png" alt="Logo">
+            </picture>
+        </a>
         <BottomMenu />
         <Form />
     </footer>
