@@ -192,3 +192,13 @@ h1 {
         width: 150px;
     }
 }
+
+.footer {
+    padding: 75px 0;
+    background-color: $purple;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
