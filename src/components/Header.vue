@@ -8,7 +8,7 @@
                 </picture>
             </a>
             <TopMenu />
-            <SignUp />
+            <SignUp content="Sign Up" classes="sign-up sign-up--purple sign-up--big" />
         </div>
     </header>
 </template>

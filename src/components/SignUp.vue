@@ -1,3 +1,9 @@
 <template>
-    <button type="button" class="sign-up sign-up--purple sign-up--big">Sign Up</button>
+    <button type="button" :class="classes">{{content}}</button>
 </template>
+
+<script>
+export default {
+    props: ['content', 'classes']
+}
+</script>
