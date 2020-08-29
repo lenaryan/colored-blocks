@@ -1,8 +1,12 @@
 <template>
-    <div>
-        <Slide />
-        <Slide />
-    </div>
+    <section class="slider">
+        <ul class="slider__wrapper">
+            <Slide />
+            <Slide />
+            <Slide />
+            <Slide />
+        </ul>
+    </section>
 </template>
 
 <script>
