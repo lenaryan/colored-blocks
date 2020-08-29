@@ -53,3 +53,19 @@ h1 {
     max-width: 650px;
     margin: 0 auto 55px;
 }
+
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    &__logo {
+        margin-right: 130px;
+    }
+
+    &__nav {
+        flex: 1;
+    }
+}

@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a href="/">
+            <a class="header__logo" href="/">
                 <picture>
                     <source srcset="@/images/logo-top.svg">
                     <img src="@/images/logo-top.png" alt="Logo">

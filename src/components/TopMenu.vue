@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="nav header__nav">
         
     </nav>
 </template>
