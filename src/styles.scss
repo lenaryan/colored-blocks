@@ -1,0 +1,29 @@
+@font-face{
+    font-family: 'Roboto';
+    font-display: swap;
+    font-weight: 400;
+    src: url('./fonts/Roboto.woff2') format("woff2"),
+         url('./fonts/Roboto.woff') format("woff")
+};
+@font-face{
+    font-family: 'Roboto';
+    font-display: swap;
+    font-weight: 500;
+    src: url('./fonts/Robotomedium.woff2') format("woff2"),
+         url('./fonts/Robotomedium.woff') format("woff")
+};
+@font-face{
+    font-family: 'Roboto';
+    font-display: swap;
+    font-weight: 700;
+    src: url('./fonts/Robotobold.woff2') format("woff2"),
+         url('./fonts/Robotobold.woff') format("woff")
+}
+
+$purple: #9C69E2;
+$text-color: #4B5D68;
+$title-color: #212353;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
