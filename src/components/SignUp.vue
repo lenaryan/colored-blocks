@@ -1,9 +1,9 @@
 <template>
-    <button type="button" :class="classes">{{content}}</button>
+    <button :class="classes" :type="btnType">{{content}}</button>
 </template>
 
 <script>
 export default {
-    props: ['content', 'classes']
+    props: ['content', 'classes', 'btnType']
 }
 </script>
