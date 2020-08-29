@@ -1,5 +1,3 @@
 <template>
-    <button>
-        Sign Up
-    </button>
+    <button type="button" class="sign-up sign-up--purple sign-up--big">Sign Up</button>
 </template>
