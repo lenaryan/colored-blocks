@@ -1,13 +1,15 @@
 <template>
-    <header>
-        <a href="/">
-            <picture>
-                <source srcset="@/images/logo-top.svg">
-                <img src="@/images/logo-top.png" alt="Logo">
-            </picture>
-        </a>
-        <TopMenu />
-        <SignUp />
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <a href="/">
+                <picture>
+                    <source srcset="@/images/logo-top.svg">
+                    <img src="@/images/logo-top.png" alt="Logo">
+                </picture>
+            </a>
+            <TopMenu />
+            <SignUp />
+        </div>
     </header>
 </template>
 
