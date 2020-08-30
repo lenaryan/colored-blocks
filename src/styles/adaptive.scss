@@ -45,6 +45,7 @@
         box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
         flex-direction: column;
         padding-bottom: 45px;
+        display: none;
     }
 
     .burger {
@@ -57,6 +58,27 @@
 
         &__item {
             margin-right: 0;
+
+            &--sub {
+                &:hover {
+                    + .submenu {
+                        display: block;
+                    }
+
+                    & .menu-top__submenu-icon--desk.menu-top__submenu-icon--hidden {
+                        display: none;
+                    }
+                    
+                    & .menu-top__submenu-icon--mob {
+                        display: none;
+    
+                        &.menu-top__submenu-icon--hidden {
+                            display: block;
+                            top: 30px;
+                        }
+                    }
+                }
+            }
         }
 
         &__link {
@@ -94,6 +116,7 @@
         margin: 0;
         padding: 0;
         border-bottom: 1px solid #D6B9FF;
+        display: none;
 
         &__link {
             font-size: 25px;

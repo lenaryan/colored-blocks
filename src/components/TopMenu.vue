@@ -4,8 +4,8 @@
             <li class="menu-top__item">
                 <a href="#" class="menu-top__link">About</a>
             </li>
-            <li class="menu-top__item">
-                <a href="#" class="menu-top__link menu-top__link--sub">Help
+            <li class="menu-top__item menu-top__item--sub">
+                <a class="menu-top__link menu-top__link--sub">Help
                     <picture>
                         <source srcset="@/images/arrow-small-down.svg">
                         <img src="@/images/arrow-small-down.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--desk">

@@ -11,13 +11,13 @@
                 <TopMenu />
                 <SignUp content="Sign Up" classes="sign-up sign-up--purple sign-up--big" btn-type="button" />
             </div>
-            <button class="burger header__burger header__menu-btn">
+            <button class="burger header__burger header__menu-btn" @click="openMenu">
                 <picture>
                     <source srcset="@/images/menu-burger.svg">
                     <img src="@/images/menu-burger.png" alt="Open menu">
                 </picture>
             </button>
-            <button class="cross header__cross header__menu-btn">
+            <button class="cross header__cross header__menu-btn" @click="closeMenu">
                 <picture>
                     <source srcset="@/images/menu-cross.svg">
                     <img src="@/images/menu-cross.png" alt="Close menu">
@@ -35,6 +35,18 @@ export default {
     components: {
         TopMenu,
         SignUp
+    },
+    methods: {
+        openMenu: function() {
+            document.querySelector('.mobile-wrap').style.display = 'flex';
+            document.querySelector('.burger').style.display = 'none';
+            document.querySelector('.cross').style.display = 'block';
+        },
+        closeMenu: function() {
+            document.querySelector('.mobile-wrap').style.display = 'none';
+            document.querySelector('.cross').style.display = 'none';
+            document.querySelector('.burger').style.display = 'block';
+        },
     }
 }
 </script>

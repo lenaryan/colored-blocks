@@ -91,11 +91,31 @@ h1 {
 
 .menu-top {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     &__item {
         margin-right: 45px;
         position: relative;
+
+        &--sub {
+            &:hover {
+                & .menu-top__link {
+                    color: $purple;
+                }
+
+                & .submenu {
+                    display: block;
+                }
+
+                & .menu-top__submenu-icon--desk {
+                    display: none;
+
+                    &.menu-top__submenu-icon--hidden {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 
     &__link {
@@ -109,11 +129,13 @@ h1 {
 
         &:hover {
             color: $purple;
+            cursor: pointer;
         }
 
         &--sub {
             display: flex;
             align-items: center;
+            padding-bottom: 15px;
         }
     }
 
@@ -143,9 +165,9 @@ h1 {
     border: 1px solid $purple;
     border-radius: 10px;
     padding: 12px 25px;
-    margin-top: 15px;
     min-width: 170px;
     box-shadow: 0 4px 0 #E2CEFE;
+    display: none;
 
     &__link {
         text-decoration: none;
