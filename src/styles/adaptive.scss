@@ -7,3 +7,93 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 50px 0 40px;
+
+        &__wrapper {
+            align-items: flex-start;
+        }
+    }
+
+    .menu-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form__input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header__wrapper,
+    h1,
+    .main-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__logo {
+            margin-right: 0;       
+        }
+
+        &__menu-bottom {
+            flex: unset;
+        }
+    }
+
+    .menu-bottom {
+        align-items: flex-end;
+
+        &__item {
+            margin-right: 0;
+        }
+
+        &__link {
+            width: 100px;
+            display: block;
+        }
+    }
+
+    .form {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+
+        &__input {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 60px 0 50px;
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .form__input {
+        width: 100%;
+    }
+}
