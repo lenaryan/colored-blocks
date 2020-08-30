@@ -2,22 +2,22 @@
     font-family: 'Roboto';
     font-display: swap;
     font-weight: 400;
-    src: url('./fonts/Roboto.woff2') format("woff2"),
-         url('./fonts/Roboto.woff') format("woff")
+    src: url('../fonts/Roboto.woff2') format("woff2"),
+         url('../fonts/Roboto.woff') format("woff")
 };
 @font-face{
     font-family: 'Roboto';
     font-display: swap;
     font-weight: 500;
-    src: url('./fonts/Robotomedium.woff2') format("woff2"),
-         url('./fonts/Robotomedium.woff') format("woff")
+    src: url('../fonts/Robotomedium.woff2') format("woff2"),
+         url('../fonts/Robotomedium.woff') format("woff")
 };
 @font-face{
     font-family: 'Roboto';
     font-display: swap;
     font-weight: 700;
-    src: url('./fonts/Robotobold.woff2') format("woff2"),
-         url('./fonts/Robotobold.woff') format("woff")
+    src: url('../fonts/Robotobold.woff2') format("woff2"),
+         url('../fonts/Robotobold.woff') format("woff")
 }
 
 $purple: #9C69E2;
@@ -73,6 +73,13 @@ h1 {
 
     &__nav {
         flex: 1;
+    }
+
+    &__menu-btn {
+        border: none;
+        background-color: unset;
+        padding: 0;
+        display: none;
     }
 }
 
@@ -192,6 +199,10 @@ h1 {
         padding: 10px;
         width: 150px;
     }
+}
+
+.main {
+    margin-top: 120px;
 }
 
 .slider {

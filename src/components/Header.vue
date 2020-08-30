@@ -9,6 +9,19 @@
             </a>
             <TopMenu />
             <SignUp content="Sign Up" classes="sign-up sign-up--purple sign-up--big" btn-type="button" />
+
+            <button class="burger header__burger header__menu-btn">
+                <picture>
+                    <source srcset="@/images/menu-burger.svg">
+                    <img src="@/images/menu-burger.png" alt="Open menu">
+                </picture>
+            </button>
+            <button class="cross header__cross header__menu-btn">
+                <picture>
+                    <source srcset="@/images/menu-cross.svg">
+                    <img src="@/images/menu-cross.png" alt="Close menu">
+                </picture>
+            </button>
         </div>
     </header>
 </template>
