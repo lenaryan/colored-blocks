@@ -246,8 +246,12 @@ h1 {
     box-sizing: border-box;
 
     &__wrapper {
-        display: flex;
         overflow-x: hidden;
+    }
+
+    &__slides {
+        display: flex;
+        transition: all 1s ease-in-out;
     }
 }
 
