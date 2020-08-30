@@ -276,6 +276,11 @@ h1 {
             height: 10px;
             background-color: #F063B8;
         }
+
+        &:focus {
+            outline: none;
+            background-color: #F063B8;
+        }
     }
 
     &__dot {
