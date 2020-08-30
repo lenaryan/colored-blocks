@@ -32,9 +32,12 @@ export default {
         Slide
     },
     methods: {
-        move: function(event, num) {
+        move: function(num) {
             document.querySelectorAll('.slider__btn--active').forEach(item => item.classList.remove('slider__btn--active'));
+            document.querySelector('.slider__btn--' + num).classList.add('slider__btn--active');
             let percents;
+
+            //getting translate percents in style attribute
             let sliderStyle = document.querySelector('.slider__slides').getAttribute('style');
             if (sliderStyle == null) {
                 percents = 0;
@@ -42,15 +45,14 @@ export default {
                 percents = Math.abs(parseInt(document.querySelector('.slider__slides').getAttribute('style').slice(22,-3)));
             }
 
-            console.table(percents, num)
-
+            //setting up new translate depending on stating point (percents)
+            //and finishing point (num * 100)
+            //and do nothing if they are equal
             if (percents < (num * 100)) {
-                console.table('percents less', percents, num)
                 for (let px = percents; px <= (num * 100); px++) {
                     document.querySelector('.slider__slides').style.transform = 'translateX(' + -px + '%)';
                 }
             } else if (percents > (num * 100)) {
-                console.table('percents more',percents, num)
                 for (let px = percents; px >= (num * 100); px--) {
                     document.querySelector('.slider__slides').style.transform = 'translateX(' + -px + '%)';
                 }
