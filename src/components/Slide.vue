@@ -1,5 +1,6 @@
 <template>
     <li class="slide slider__slide">
+        <span v-if="feature.new" class="slide__new">New</span> 
         <span class="slide__num">{{feature.id}}</span>
         <h2 class="slide__title">{{feature.title}}</h2>
         <p class="slide__text">{{feature.text}}</p>
