@@ -8,11 +8,20 @@
                 <a href="#" class="menu-top__link menu-top__link--sub">Help
                     <picture>
                         <source srcset="@/images/arrow-small-down.svg">
-                        <img src="@/images/arrow-small-down.png" alt="Submenu" class="menu-top__submenu-icon">
+                        <img src="@/images/arrow-small-down.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--desk">
                     </picture>
                     <picture>
                         <source srcset="@/images/arrow-small-up.svg">
-                        <img src="@/images/arrow-small-up.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--hidden">
+                        <img src="@/images/arrow-small-up.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--desk menu-top__submenu-icon--hidden">
+                    </picture>
+
+                    <picture>
+                        <source srcset="@/images/arrow-up.svg">
+                        <img src="@/images/arrow-up.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--mob">
+                    </picture>
+                    <picture>
+                        <source srcset="@/images/arrow-open.svg">
+                        <img src="@/images/arrow-open.png" alt="Submenu" class="menu-top__submenu-icon menu-top__submenu-icon--mob menu-top__submenu-icon--hidden">
                     </picture>
                 </a>
                 <ul class="submenu menu-top__submenu">

@@ -83,6 +83,12 @@ h1 {
     }
 }
 
+.mobile-wrap {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
 .menu-top {
     display: flex;
     align-items: center;
@@ -123,7 +129,11 @@ h1 {
         margin-left: 5px;
 
         &--hidden {
-            opacity: 0;
+            display: none;
+        }
+
+        &--mob {
+            display: none;
         }
     }
 }

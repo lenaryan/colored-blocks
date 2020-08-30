@@ -7,9 +7,10 @@
                     <img src="@/images/logo-top.png" alt="Logo">
                 </picture>
             </a>
-            <TopMenu />
-            <SignUp content="Sign Up" classes="sign-up sign-up--purple sign-up--big" btn-type="button" />
-
+            <div class="mobile-wrap header__mobile-wrap">
+                <TopMenu />
+                <SignUp content="Sign Up" classes="sign-up sign-up--purple sign-up--big" btn-type="button" />
+            </div>
             <button class="burger header__burger header__menu-btn">
                 <picture>
                     <source srcset="@/images/menu-burger.svg">
