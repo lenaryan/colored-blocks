@@ -242,7 +242,7 @@ h1 {
     border-radius: 50px;
     max-width: 1200px;
     margin: 0 auto 150px;
-    padding: 100px 120px 130px 0;
+    padding: 100px 120px 60px 0;
     box-sizing: border-box;
 
     &__wrapper {
@@ -252,6 +252,36 @@ h1 {
     &__slides {
         display: flex;
         transition: all 1s ease-in-out;
+    }
+
+    &__dots {
+        margin-top: 50px;
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        display: block;
+        border: none;
+        padding: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 15px;
+
+        &--active {
+            width: 10px;
+            height: 10px;
+            background-color: #F063B8;
+        }
+    }
+
+    &__dot {
+        &--mob {
+            display: none;
+        }
     }
 }
 

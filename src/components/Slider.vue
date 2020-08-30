@@ -8,15 +8,15 @@
         </div>
         <ul class="slider__dots">
             <li class="slider__dot">
-                <button class="slider__btn slider__btn--0" @click="move(0)"></button>
+                <button class="slider__btn slider__btn--0 slider__btn--active" @click="move(0)"></button>
             </li>
             <li class="slider__dot">
                 <button class="slider__btn slider__btn--1" @click="move(1)"></button>
             </li>
-            <li class="slider__dot">
+            <li class="slider__dot slider__dot--mob">
                 <button class="slider__btn slider__btn--2" @click="move(2)"></button>
             </li>
-            <li class="slider__dot">
+            <li class="slider__dot slider__dot--mob">
                 <button class="slider__btn slider__btn--3" @click="move(3)"></button>
             </li>
         </ul>
@@ -32,8 +32,8 @@ export default {
         Slide
     },
     methods: {
-        move: function(num) {
-            //document.querySelector('.slider__slides').style.transform = 'translateX(' + (-num * 100) + '%)';
+        move: function(event, num) {
+            document.querySelectorAll('.slider__btn--active').forEach(item => item.classList.remove('slider__btn--active'));
             let percents;
             let sliderStyle = document.querySelector('.slider__slides').getAttribute('style');
             if (sliderStyle == null) {
