@@ -12,10 +12,6 @@
     .slider {
         max-width: 1050px;
         padding-right: 70px;
-
-        &__dot--mob {
-            display: block;
-        }
     }
 
     .slide {
@@ -27,6 +23,10 @@
     .slider {
         max-width: 680px;
         padding-right: 140px;
+
+        &__dot--mob {
+            display: block;
+        }
     }
 
     .slide {
